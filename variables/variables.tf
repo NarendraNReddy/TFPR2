@@ -1,4 +1,5 @@
 # EC2 insstance info 
+# 1 command line 2. tfvars 3. ENV variables 4. vari defalt values
 variable "image_id" {
     type=string 
     #default = "ami-090252cbe067a9e58" #if commented out,  It will ask for default value

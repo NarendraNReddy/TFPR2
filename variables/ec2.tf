@@ -1,3 +1,4 @@
+# 1 command line 2. tfvars 3. ENV variables 4. vari defalt values
 #ec2 instance
 resource "aws_instance" "db"{
   ami                     = var.image_id
