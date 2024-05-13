@@ -1,4 +1,4 @@
-output "instance_info" {
-    value=var.instance_name
+output "public_ip" {
+    value=aws_instance.db
   
 }
