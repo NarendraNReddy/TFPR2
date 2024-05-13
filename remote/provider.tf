@@ -1,0 +1,21 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.49.0"
+    }
+  }
+
+  backend "s3" {
+    bucket = "daws78s-nnr6"
+    key    = "remote-state1"
+    region = "us-east-1"
+    dynamodb_table = "daws78s-nnr6"
+  }
+
+}
+
+#You can provide AWS user key and secret key.But not recoded.
+provider "aws" {
+  region = "us-east-1"
+}
